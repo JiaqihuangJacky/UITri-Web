@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Triton Angel.generaleducation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ 
+    <!-- using css -->
+  <link href="collegestyle.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   
+    <!-- using fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!----------------------------------------------------------------------
+	Name:	remove space
+	Purpose:   remove the navbar's default margin-bottom and rounded borders
+	---------------------------------------------------------------------- -->
+<style> 
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+</style>
+    
+
+
+
+ <!-- style the sldess -->
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+  </style>
+
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!----------------------------------------------------------------------
+Name: click then smooth move
+Purpose:  click button to go to next div
+---------------------------------------------------------------------- -->    
+    <script>
+    $(document).ready(function(){
+     // Add smooth scrolling to all links
+     $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+         event.preventDefault();
+         // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+           window.location.hash = hash;
+          });
+       } // End if
+     });
+    });
+  </script> <!-- script for scoll button -->
+
+
+ 
+
+
+  
+  
+</head>
+<body>
+
+
+      
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse  opaque-navba">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Trition Angel</a>
+          </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="#">Home</a></li>
+              <li ><a href="#"  data-toggle="modal" data-target="#MyModal">About</a></li>
+              <li><a href="#copyright">Contact</a></li>
+              <li><a href="#college">GE course</a></li>
+              <li><a href="#dei">DEI</a></li>
+              <li><a href="#ahi">AHI</a></li>
+           </ul>
+          </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+      </nav>
+
+
+ 
+
+<!----------------------------------------------------------------------
+Name: myself division container
+Purpose:   introduce myself
+---------------------------------------------------------------------- --> 
+<div class="wide animated rubberBand" id ="box-wrapper1">
+  
+   <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" >
+                <h2>General Education at UCSD</h2>
+                     <!-- link to myself -->
+            <hr>
+            
+             
+          <p id="me">GE for each college </br>
+          				
+          					 Diversity, Equity, and Inclusion</br>
+          			
+          					 American history and institutions</br>
+          </p>
+                
+            </div>
+            <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+
+
+
+ <section id="items"  >
+        <div class="container">
+            <div class="header">
+                <div class="col-12 text-center" id="college">
+                    <h2 class="this->heading"><strong>Choose Your College</strong></h2>
+                    <hr class="this->hr">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="container">
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                        <a href="#warren"><i class="fa fa-caret-square-o-down fa-2x animated infinite bounce" aria-hidden="true" style="color:#00BFFF"></i></a>
+            
+                        <h3><strong>Earl Warren College</strong></h3>
+                        
+                      
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                    
+                        <a href="#rev">  <i class="fa fa-caret-down fa-2x animated infinite tada" aria-hidden="true" style="color:	#A52A2A"></i></a>
+                        <h3><strong>Revelle College</strong></h3>
+                        
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                   
+                         <a href="#erc"> <i class="fa fa-chevron-circle-down fa-2x animated infinite jello" aria-hidden="true" style="color:#DAA520"></i></a>
+                        <h3><strong>Eleanor Roosevelt College</strong></h3>
+                      
+                       
+                    </div>
+                </div>
+                
+            
+            </div>
+            
+       
+        
+       
+            <div class="container">
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                   
+            						<a href="#tmc"><i class="fa fa-angle-double-down fa-2x animated infinite rubberBand" aria-hidden="true" style="color:#F08080" ></i></a>
+                        <h3><strong>Thurgood Marshall College </strong></h3>
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4 text-center">
+                    <div class="box">
+            
+                        <a href="#six"><i class="fa fa-long-arrow-down fa-2x animated infinite wobble" aria-hidden="true"  style="color:#8FBC8F"></i></a>
+                        <h3><strong>Sixth College</strong></h3>
+                       
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box">
+
+                         <a href="#mui"><i class="fa fa-hand-o-down fa-2x animated infinite slideInDown" aria-hidden="true"  style="color:#4682B4"></i></a>
+                        <h3><strong>John Muir College</strong></h3>
+                      
+                        
+                    </div>
+                </div>
+                
+            
+            </div>
+            
+        </div>
+</section>
+
+
+
+<div class="container text-center" id="warren">
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Warren College</strong></h3>
+            <img src="collegeimage/logoWar.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                  <a href="https://warren.ucsd.edu/academics/general-education/index.html" target ="_blank">
+      	    	    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                  </a>
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: #27ae60;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color: #27ae60;">
+            <div class="content">
+              <p>- Two 4 unit courses course, <strong>unrelated to your major</strong>. Course number must be 100 or more.(Can be pass not pass) </p>
+              <a href="https://warren.ucsd.edu/_files/academics/choose-udnc.pdf"  target ="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>Check course</a>
+              <p>- DEI requirement</p>
+              <p>- WCWP 100 (must be in a letter grade), only can take at UC San Diego</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: #f39c12;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: #f39c12;">
+            <div class="content"  >
+                  <p>- You have to finish the standard general-education requirements</p>
+                  <p>- Warren Writing </p>
+                  <img src="https://openclipart.org/image/2400px/svg_to_png/241842/sad_panda.png" height ="100" width="100"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+
+</div>
+ 
+  
+ 
+
+<div class="container text-center" id="mui" >
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Muir College</strong></h3>
+            <img src="collegeimage/logoMui.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                  <a href="https://muir.ucsd.edu/academics/degree_reqs.html"
+      	             target ="_blank">	<i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                  </a>
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="250" width="250" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color:	#CD5C5C;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color: #CD5C5C;">
+            <div class="content">
+              <p>- MCWP 50 or 125 </p>
+              <p>- You can enroll in their first pass of enrollment for their <strong> first three quarters</strong>. </br>
+               After the third quarter,you only enroll in the second pass</p>
+              <p>- DEI requirement</p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#FFB6C1;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 	#FFB6C1;">
+            <div class="content">
+                  <p>Under Partial IGETC:complete missing 1-2 classes at UCSD   </p>
+                  <p>UC Reciprocity:MCWP 40 and MCWP 50 && DEI</p>
+   		            <p>Not Completed any of them: taking all general education as freshmen</p>
+
+                   <img src="https://openclipart.org/image/2400px/svg_to_png/241842/sad_panda.png" height ="50" width="50" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+
+</div>
+    
+
+
+
+<div class="container text-center"  id="erc">
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Erc College</strong></h3>
+            <img src="collegeimage/logoErc.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                  <a href="http://roosevelt.ucsd.edu/academics/gen-ed/"
+      	            target ="_blank">	<i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+      	          </a>
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: 	#DDA0DD;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color:	#DDA0DD;">
+            <div class="content">
+              <p>MMW 121 and MMW 122. Both must be taken for a letter grade and for D or better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#20B2AA;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 	#20B2AA;">
+            <div class="content"  >
+                  <p>MMW 121 and MMW 122. Both must be taken for a letter grade and for D or better.
+			    	Complete missing IGETC requirements (Can be pass not pass). </p>
+
+                  <img src="https://openclipart.org/image/2400px/svg_to_png/241842/sad_panda.png" height ="100" width="100"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+
+</div>
+
+
+
+<div class="container text-center"  id="tmc" >
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Marshall College</strong></h3>
+            <img src="collegeimage/logoTmc.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                 <a href="https://marshall.ucsd.edu/academics/general-education-requirements.html"
+      	        target ="_blank">	<i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+      	        </a>
+
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: 			#66CDAA;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color:			#66CDAA;">
+            <div class="content">
+              <p>- Complete two Upper Division Disciplinary Breadth courses, one of which must include 
+                  <a href="https://marshall.ucsd.edu/_files/academics/sigwriting.pdf">significant writing</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 		#B0C4DE;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 		#B0C4DE;">
+            <div class="content"  >
+                 <p>- Complete two Upper Division Disciplinary Breadth courses, one of which must include 
+                    <a href="https://marshall.ucsd.edu/_files/academics/sigwriting.pdf">significant writing</a>.
+                    </br>
+	            	- Complete the remaining one to two missing IGETC requirements .
+                    
+                    </br>
+		            - Students must meet with a Marshall College Academic Advisor to determine remaining GE courses.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+</div>
+
+
+<div class="container text-center" id="six"  >
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Sixth College</strong></h3>
+            <img src="collegeimage/logoSix.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                 <a href="https://sixth.ucsd.edu/academics/requirements/transfer-requirements.html"
+      	        target ="_blank">	<i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+      	        </a>
+
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: 	#F08080;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color:	#F08080;">
+            <div class="content">
+               <p><a href ="https://sixth.ucsd.edu/practicum/index.html"> Practicum and CAT 125</a> </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#E6E6FA;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: #E6E6FA;">
+            <div class="content"  >
+                 <p>You will need to petition some of your transfer courses for GE credit. Advisor will review your transfer courses
+                  to see what courses you have done.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+</div>
+
+
+
+
+<div class="container text-center" id="rev">
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Revelle College</strong></h3>
+            <img src="collegeimage/logoRev.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to GE</h3>
+                 <a href="http://revelle.ucsd.edu/academics/transfer-information/igetc.html"
+      	        target ="_blank">	<i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+      	        </a>
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: #F0F8FF;">
+              <h3><strong>Type 1:</strong></h3>
+              <h3>General Education</h3>
+              <h4>With IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color:#F0F8FF;">
+            <div class="content">
+                     <p>- Revelle College does not accept IGETC as satisfaction of GE requirements</p>
+                     <p>- Completion of IGETC will waive the Humanities, Social Science, Fine Arts, and Language Proficiency general education requirements.</p>
+                     <p>- Complete Revelle College math and science requirement.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#8FBC8F;">
+                  <h3><strong>Type 2:</strong></h3>
+                  <h3>General Education</h3>
+                  <h4>Without IGETC/UC or 4-Year Reciprocity/Verified Transfer Program</h4>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 	#8FBC8F;">
+            <div class="content"  >
+                  <p>- Completion of IGETC will waive the Humanities, Social Science, Fine Arts, and Language Proficiency general education requirements.</p>
+			      <p>- You also need to complete Revelle College math and science requirement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+</div>
+
+
+
+
+
+
+<div class="container text-center"  id="dei">
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>Diversity, Equity, and Inclusion Requirement</strong></h3>
+            <img src="collegeimage/deix.png" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to DEI</h3>
+                  <a href="https://academicaffairs.ucsd.edu/ug-ed/diversity/"
+      	        class="btn btn-info btn-lg"><i class="fa fa-external-link-square fa-2x" aria-hidden="true" target ="_blank"></i>
+              	</a>
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: 	#FAEBD7;">
+              <h3><strong>What is DEI?</strong></h3>
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color: 	#FAEBD7;">
+            <div class="content">
+                  <h4> A requirement for all candidates for a Bachelor’s degree</h4>
+                  <p>- Can be pass not pass;at least C- or a P</p>
+                  <p>- Can be taken during summer or after you transfer to UCSD</p>
+                  <p>- You can also take in community college if you find the right classes</p>
+                 
+                  <p></p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#E9967A;">
+                  <h3><strong>Check DEI:</strong></h3>
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 	#E9967A;">
+            <div class="content"  >
+                    <h4><strong>Approved course</strong></h4>
+
+                  <p>It can overlap with you upper division GE</p>
+                  <a href="https://academicaffairs.ucsd.edu/_files/ug-ed/DEI_Approved_Courses.pdf"
+                    target="_blank">Check the courses<i class="fa fa-link" aria-hidden="true"></i>
+    	           </a>
+    	
+    	         <p>You may have done DEI in your college</p>
+    			 <a href="http://www.assist.org/web-assist/welcome.html"
+      				target="_blank">Check the assit.org<i class="fa fa-link" aria-hidden="true"></i>
+    				</a>
+
+                   <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#demo">Instruction </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+
+</div>
+
+
+<div class="container collapse " id="demo">
+  <div class="text-center">
+    <div class="col">
+				<img src="collegeimage/dei2.png" class="img-rounded" alt="Cinque Terre" height="750" width="650">
+    </div>
+    
+    <div class="col">
+    		<p>Choosing the class you need to find</p>
+    </div>
+ 
+  </div>
+
+
+  <div class="text-center">
+    <div class="col">
+				<img src="collegeimage/dei.png" class="img-rounded" alt="Cinque Terre" height="750" width="650">
+    </div>
+
+	 <div class="col">
+    		<p>To make sure the class fullfill the DEI</p>
+    </div>
+ 
+	</div>
+ 
+</div>
+
+
+
+
+
+
+
+<div class="container text-center"  id="ahi">
+ 
+  <div class="cardWrapper">
+    <!-- first Row -->
+    <div class="row">
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front">
+            <h3 class="text-center"><strong>American history and institutions</strong></h3>
+            <img src="collegeimage/his.jpg" class="img-responsive" />  
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Link to DEI</h3>
+                 <a href="http://www.ucsd.edu/catalog/front/UgrdDegReq.html"
+      	        target="_blank">Learn more<i class="fa fa-link" aria-hidden="true"></i>
+    	    	</a>
+
+
+              <img src="https://timg01.bdimg.com/timg?wapbaike&quality=80&size=b2724_1798crop=&cut_x=77&cut_y=0&cut_w=2724&cut_h=1798&sec=1349839550&di=48b1a9af0b6c39332f8fb8312b28c28c&src=http://imgsrc.baidu.com/baike/pic/item/b8014a90f603738de4228820bb1bb051f819ec4c.jpg" height ="200" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front" style="background-color: 	#FF7F50;">
+              <h3><strong>U.S history Type 1</strong></h3>
+              <h4><strong>International student</strong></h4>
+
+              <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />
+          </div>
+          <div class="back" style="background-color: 	#FF7F50;">
+            <div class="content">
+                  <p>You do not need to take U.S history.</p>
+   		          <p>An international student attending the university on an F-1 or J-1 visa, by showing proof of temporary residence in the United States, 
+   		          may petition for exemption from this requirement through the office of his or her college provost during the senior year.</p>
+
+                  <p></p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 cardContainer">
+        <div class="card">
+          <div class="front"  style="background-color: 	#F5F5DC;">
+                 <h3><strong>U.S history Type 2</strong></h3>
+                 <h4><strong>U.S citizen /Permanent resident</strong></h4>
+
+                  <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/click.png" height ="50" width="50" />  
+          </div>
+          <div class="back" style="background-color: 	#F5F5DC;">
+            <div class="content"  >
+    	        <p>You need to take U.S history.</p>
+		    	<p>Turn in High School transcript if you have done it in high school.</p>
+   		        <p>Take it in community college.</p>
+   		        <p>Take it in UCSD.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first Row End -->
+  </div>
+  <!--cardWrapper Ends-->
+
+</div>
+
+
+
+
+
+
+<!----------------------------------------------------------------------
+Name:fixed foot
+Purpose:  adding fixed foot with social media
+---------------------------------------------------------------------- -->
+  <div class="navbar navbar-inverse  opaque-navba" id="copyright"> 
+    <div class="container-fluid"> 
+      <div class="navbar-text  pull-left">
+            <p id="copy"> <strong>CopyRight <i class="fa fa-copyright" aria-hidden="true"></i> Jacky Huang   </strong> </p>
+      </div>  
+    
+      <!-- fixed foot right-->
+      <div class="navbar-text pull-right">
+           <a href="https://www.facebook.com/jiaqi.huang.73?ref=bookmarks" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"  style="color:#00BFFF;"></i></a>
+           <a href="https://www.instagram.com/jacky_jiaqihuang/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:#EE82EE;"></i></a>
+           <a href="http://lmgtfy.com/?q=Sorry+this+is+not+available" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:#DB7093;"></i></a>
+           <a href="http://lmgtfy.com/?q=Sorry+this+is+not+available"  target="_blank"><i class="fa fa-weixin fa-2x" aria-hidden="true" style="color:#9ACD32;"></i></a>
+      </div>
+           
+    </div>
+  </div>
+
+
+
+
+
+<!----------------------------------------------------------------------
+Name: about
+Purpose:  box to my website
+---------------------------------------------------------------------- -->
+<div id="MyModal" class="modal fade" role="dialog">
+   <!-- Adding contend -->
+  <div class="modal-dialog">
+        <div class="modal-content"> 
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">TrionedAngel sub page: college general requirement</h4>
+              </div>
+              
+              <div class="modal-body">
+                  <p>This is a responsive website is created by UCSD student. </br>
+                     Language: HTML, CSS, Javascript, jquery  </br>
+                     Template: Bootstrap</br>
+                     Device: Mobile and Website</br>
+                     Date: 2017  </br>
+                  </p>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn=default" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+  </div> 
+ </div>  
+
+
+
+
+<!----------------------------------------------------------------------
+Name: for click flip
+Purpose:  animation for click flip
+---------------------------------------------------------------------- -->
+ <script>
+      
+ $( "#header-plugin" ).load( "http://vivinantony.github.io/header-plugin/", function() {
+	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2015/05/responsive-3d-flip-card.html#tlt")  
+});
+
+//script here
+$('.card').hover(function() {
+  $(this).toggleClass('flipped');
+});
+      
+      
+  </script>
+ 
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation
+Purpose:  animation for scroll down
+---------------------------------------------------------------------- -->
+<!-- must above the javascript cdn-->
+<script  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> 
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation part 2
+Purpose:  arrange time and distance and duration for animaition
+---------------------------------------------------------------------- -->
+<script> 
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration:2000,
+        origin:'bottom'
+      });
+      
+       sr.reveal('.war',{
+        duration:3000,
+        origin:'left',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.muir',{
+        duration:3000,
+        origin:'right',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.ercs',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+      sr.reveal('.tmcs',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.sixth',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.revelle',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.DEI',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.AHI',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+
+</script>
+
+
+
+  <!-- send of body -->
+
+</body>
+</html>

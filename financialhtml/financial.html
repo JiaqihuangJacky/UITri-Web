@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Triton Angel.financial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ 
+    <!-- using css -->
+  <link href="financial.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   
+    <!-- using fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!----------------------------------------------------------------------
+	Name:	remove space
+	Purpose:   remove the navbar's default margin-bottom and rounded borders
+	---------------------------------------------------------------------- -->
+<style> 
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+</style>
+    
+
+
+
+ <!-- style the sldess -->
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+  </style>
+
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!----------------------------------------------------------------------
+Name: click then smooth move
+Purpose:  click button to go to next div
+---------------------------------------------------------------------- -->    
+    <script>
+    $(document).ready(function(){
+     // Add smooth scrolling to all links
+     $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+         event.preventDefault();
+         // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+           window.location.hash = hash;
+          });
+       } // End if
+     });
+    });
+  </script> <!-- script for scoll button -->
+
+
+
+    
+    
+</head>
+<body>
+
+
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse  opaque-navba ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">TritionAngel</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="#">Home</a></li>
+              <li ><a href="#"  data-toggle="modal" data-target="#MyModal">About</a></li>
+              <li><a href="#copyright">Contact</a></li>
+              <li><a href="#fasha">FASHA</a></li>
+              <li><a href="#cal">WebGrants</a></li>
+              <li><a href="#status">Tips</a></li>
+              <li><a href="#loc">Location</a></li>
+           </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+
+
+
+<div class="wide animated rubberBand" id ="box-wrapper1">
+  
+   <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" >
+                <h2>Financial aid at UCSD</h2>
+                     <!-- link to myself -->
+            <hr>
+            
+             
+           <p id="me">Submit FASHA </br>
+          				
+          			 California Student aid commission</br>
+          			
+          			 Submit supplemental documents</br>
+          </p>
+                
+                
+            </div>
+            <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+
+<section id="begin">
+    <div class="container text-center">
+
+    <div class="col-sm-4">
+        <div class ="box">
+      	<img src="https://studentfinance.northeastern.edu/wp-content/uploads/2015/02/about-fafsa.jpg" class="img-circle" height="200" width="200">
+      	<h3 class="animated infinite swing "><strong>FASHA</strong></h3>
+      	<hr>
+        
+        </div>
+
+    </div>
+    
+    <div class="col-sm-4">
+         <div class ="box">
+      	<img src="https://files.blog.turbotax.intuit.com/2013/07/istock_000018346802xsmall.jpg?w=640" class="img-circle" height="200" width="200">
+      	<h3 class="animated infinite jello "><strong>Cal Grant</strong></h3>
+      	<hr>
+        
+        </div>
+        
+        
+    </div>
+    
+    <div class="col-sm-4">
+          <div class ="box">
+      	<img src="http://www.dmv.gov.za/img/documents.jpg" class="img-circle" height="200" width="200">
+      	<h3 class="animated infinite rubberBand "> <strong>Documents</strong></h3>
+      	
+      	<hr>
+      	
+         </div>
+    </div>
+    
+ 
+</div>
+
+</section>
+
+
+<section id="fasha">
+    <div class="container">
+
+    <div class="col-sm-4 text-center" >
+  
+      	<img src="http://images.collegexpress.com/article/financial-aid-FAFSA-step-by-step.jpg" class="img-circle" height="250" width="250" style="	border:5px solid #333;">
+      
+      </br>
+      <a href="https://fafsa.ed.gov/" target="_blank">
+      	       <i class="fa fa-external-link-square" aria-hidden="true" style="color:black"></i>
+      </a>
+       
+    </div>
+     
+      <div class="col-sm-8">
+     
+      <h2><strong>Financial Aid:</strong></h2>
+      
+      
+      
+      <p>- You need to complete the mandatory task:  <strong>(This is an example)</strong> </br>
+      - Confirm Awarding Assumptions </br>
+      - Reporting of Additional Resources </br>
+      - View/Accept 201x-1x Financial Awards </br>
+      - 201x Student IRS Data Retrieval Completed </br>
+      - 201x Parent IRS Data Retrieval Completed </br>
+      - Submit Dependent Verification Worksheet </br>
+      - Electronically sign the Multi-Year Authorization Form</br>
+      - Satisfactory Academic Progress Requirements</p>
+     
+             <a href="#"  data-toggle="modal" data-target="#MyModalfasha">
+      	<i class="fa fa-th-list" aria-hidden="true"  style="color:#FF6347"> Instruction </i>
+      </a>
+     
+      </br>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#demo2">Image Instruction</button>	
+    </div>
+    
+ 
+</div>
+
+</section>
+
+
+
+<!----------------------------------------------------------------------
+Name: about fasha
+Purpose:  info the fasha
+---------------------------------------------------------------------- -->
+<div id="MyModalfasha" class="modal fade" role="dialog">
+   <!-- Adding contend -->
+  <div class="modal-dialog">
+        <div class="modal-content"> 
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Instruction to check you financial aid status</h4>
+              </div>
+              
+              <div class="modal-body">
+                  <p><strong>Instruction:</strong></p>
+                  <p>Go to Myportal </br>
+                     Go to my tritonlink </br>
+                     Go to Financial Tools</br>
+                     Select financial aid</br>
+                     Financial Aid Application Checklist. Select a year to begin:</br>
+                     For example 2013-2014, then select:</br>
+                     Then, you will see the Award Checklist </br>
+                     </br>
+                     <strong>When you finish everything: </strong></br>
+                     2015 Student IRS Data Retrieval Completed</br>
+                     2015 Parent IRS Data Retrieval Completed</br>
+                     Submit Dependent Verification Worksheet</br>
+                     Electronically sign the Multi-Year Authorization Form</br>
+                     Satisfactory Academic Progress Requirements</br>
+                     
+                   
+                  </p>
+                  <p>
+                        </br>
+                     <strong>After you get the reward: </strong></br>
+                      Confirm Awarding Assumptions</br>
+                      Reporting of Additional Resources</br>
+                      View/Accept 2016-17 Financial Awards (How much money you get!)</br>
+                     
+           
+                  </p>
+                  <p>The UCSD school code for your FAFSA is <strong>001317</strong></p>
+                  <p><strong>Make sure your code is correct!</strong></p>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn=default" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+  </div> 
+ </div>  
+
+
+<!----------------------------------------------------------------------
+Name: about fasha image
+Purpose:  info the fasha image
+---------------------------------------------------------------------- -->
+
+<div class="container collapse " id="demo2">
+  <div class="text-center">
+    <div class="col">
+				<img src="3.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+    
+    <div class="col">
+    		<p>Google myportal</p>
+    </div>
+    
+   <div class="col">
+				<img src="4.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+    
+    <div class="col">
+				<img src="5.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+    
+    <div class="col">
+				<img src="6.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+    
+     <div class="col">
+    		<p>Make sure the information is correct</p>
+    </div>
+    
+     <div class="col">
+    		<p>After you finish all the checklist, you can check your reward</p>
+    </div>
+      
+    <div class="col">
+				<img src="7.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+ 
+  </div>
+
+
+</div>
+
+
+<!----------------------------------------------------------------------
+Name: cal
+Purpose:  info the cal image
+---------------------------------------------------------------------- -->
+<section id="cal">
+    <div class="container">
+
+    
+     
+    <div class="col-sm-8">
+     
+      <h2><strong>WebGrants: check your email !!! </strong></h2>
+      <p>- You need to make sure the information is correct: </br>
+  
+      - View My CA Aid Report (Make sure the school is right) </br>
+      - View My Award Detail </br>
+      - View My Application Status </br>
+      - Submit School Change </br>
+      - Change My Address </br>
+       </p>
+      
+      <a href="#"  data-toggle="modal" data-target="#MyModalcal">
+      	<i class="fa fa-th-list" aria-hidden="true"  style="color:white">  Instruction  </i>
+      </a>
+      
+      </br>
+      
+      <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#demo">Image Instruction</button>
+    </div>
+    
+    
+    <div class="col-sm-4 text-center" id="warren">
+  
+      	<img src="http://www.ca.gov/-/media/Agencies/Student-Aid-Commission-California/Services/Apply-Cal-Grant.ashx" class="img-circle" height="250" width="250" style="	border:5px solid #333;">
+      	</br>
+   
+      <a href="https://mygrantinfo.csac.ca.gov/" target="_blank">
+      	       <i class="fa fa-external-link-square" aria-hidden="true" style="color:black"></i>
+      </a>
+      	
+    </div>
+        
+    
+</div>
+
+</section> 
+
+
+
+<!----------------------------------------------------------------------
+Name: about calgrant image
+Purpose:  info the cal image
+---------------------------------------------------------------------- -->
+
+<div class="container collapse " id="demo">
+  <div class="text-center">
+    <div class="col">
+				<img src="1.png" class="img-rounded" alt="Cinque Terre" >
+    </div>
+    
+    <div class="col">
+    		<p>Choosing calgrant</p>
+    </div>
+ 
+  </div>
+
+
+  <div class="text-center">
+    <div class="col">
+				<img src="2.png" class="img-rounded" alt="Cinque Terre">
+    </div>
+
+	 <div class="col">
+    		<p>TMake sure the information is correct</p>
+    </div>
+ 
+	</div>
+ 
+</div>
+
+
+<!----------------------------------------------------------------------
+Name: about calgrant
+Purpose:  info the cal
+---------------------------------------------------------------------- -->
+<div id="MyModalcal" class="modal fade" role="dialog">
+   <!-- Adding contend -->
+  <div class="modal-dialog">
+        <div class="modal-content"> 
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Instruction to check you financial aid status</h4>
+              </div>
+              
+              <div class="modal-body">
+                  <p><strong>Instruction:</strong></p>
+                  <p>Go to website <a href ="https://mygrantinfo.csac.ca.gov/" target="_blank">here</a> </br>
+                     Enter id and passcode,sign in </br>
+                     In option, select Cal Grant</br>
+                     	
+                     - View My CA Aid Report (Make sure the school is right; they might
+                        put the wrong school, so check it constantly.) </br>
+                     - View My Award Detail (Check your Award Status Summary)</br>
+                     - View My Application Status <a href="http://www.csac.ca.gov/doc.asp?id=106" target="_blank">
+                     (Different cal grant has different gpa and unit requirement) </a></br>
+                     - Submit School Change (If you decide change school, do it asap)</br>
+                     - Change My Address </br>
+                     
+                   
+                  </p>
+                  <p>The UCSD school code for your FAFSA is <strong>001317</strong></p>
+                  <p><strong>Make sure your code is correct!</strong></p>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn=default" data-dismiss="modal">Close</button>
+               
+              </div>
+        </div>
+  </div> 
+ </div>  
+
+
+<section id="status">
+    <div class="container">
+
+    <div class="col-sm-4 text-center" >
+  
+      	<img src="important.jpeg" class="img-circle" height="250" width="250" style="	border:5px solid #333;">
+      
+      </br>
+      <a href="https://students.ucsd.edu/finances/financial-aid/types/summer-session/" target="_blank">
+      	       <i class="fa fa-external-link-square" aria-hidden="true" style="color:black"></i>
+      </a>
+       
+    </div>
+     
+      <div class="col-sm-8">
+     
+      <h2><strong>Financial Aid status:</strong></h2>
+      
+      
+      
+      <p>- 36 units during any three consecutive quarters, including Summer!</p>
+      <p>- A cumulative GPA of 2.0 or higher to graduate</p>
+      <p>- Apply <strong>Summer financial aid </strong>as early as possible</p>
+      <p>- Nobody will remind you to apply summer financial aid!</p>
+      <p>- <a href ="https://students.ucsd.edu/finances/financial-aid/types/summer-session/" target="_blank">Here is the link </a></p>
+      <p>- Course fees are different!</p>
+      <p>- Course fees: $273 /unit (undergraduate); $342 / unit (graduate)</p>
+      <p>- Undergraduate : $273 x 4 units = $1092.00 per 4-unit class</p>
+      <p>- Students must be enrolled in a minimum 6 units for summer</p>
+      </br>
+      
+    </div>
+    
+ 
+</div>
+
+</section> 
+ 
+ 
+<section  id="loc">
+    <div class="container location">
+
+    
+     <div class="col-sm-4 text-center" id="warren">
+  
+      	<img src="https://img.clipartfest.com/9e8b2d01afb030a5a2ddd1fd15b74521_where-clipart-where-clip-art_1300-1300.jpeg" class="img-circle" height="250" width="250" style="	border:5px solid #333;">
+    
+      	</br>
+      	<a href="https://students.ucsd.edu/finances/financial-aid/" target="_blank">
+      	       <i class="fa fa-external-link-square" aria-hidden="true" style="color:black"></i>
+      	</a>
+      	
+      	
+    </div>
+    
+    
+    <div class="col-sm-8">
+     
+      <h2><strong>What should I send me documents?</strong></h2>
+      <p>
+     
+  
+        Financial Aid and Scholarships Office</br>
+        Phone: (858) 534-4480Call: (858) 534-4480</br>
+        Fax: (858) 534-5459Call: (858) 534-5459</br>
+        Email: finaid@ucsd.edu</br>
+        </br>
+        Student Services Center, 3rd floor north </br>
+        9500 Gilman Drive, Mail Code 0013</br>
+        La Jolla, CA 92093-0013 
+        
+         - Location in map:  <a href="http://act.ucsd.edu/maps/" target="_blank">
+            <i class="fa fa-eercast" aria-hidden="true" style="color:green"></i>
+      </a></br>
+        
+        </br>    
+        Office and telephone hours:</br>
+        Monday, Wednesday, Friday: 8 a.m. – 4:30 p.m.</br>
+        Tuesday, Thursday: 10 a.m. – 4:30 p.m.</br>
+       </p>
+     
+      
+    </div>
+    
+    
+   
+ 
+    </div>
+
+</section> 
+
+
+<!----------------------------------------------------------------------
+Name:fixed foot
+Purpose:  adding fixed foot with social media
+---------------------------------------------------------------------- -->
+  <div class="navbar navbar-inverse  opaque-navba" id="copyright"> 
+    <div class="container-fluid"> 
+      <div class="navbar-text  pull-left">
+            <p id="copy"> CopyRight @Jacky Huang</p>
+      </div>  
+    
+     <!-- fixed foot right-->
+      <div class="navbar-text pull-right">
+           <a href="https://www.facebook.com/jiaqi.huang.73?ref=bookmarks"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"  style="color:#00BFFF;"></i></a>
+           <a href="https://www.instagram.com/jacky_jiaqihuang/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:#EE82EE;"></i></a>
+           <a href="http://bfy.tw/BNJV"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:#DB7093;"></i></a>
+           <a href="http://bfy.tw/BNJV"  data-toggle="modal" data-target="#Myweixin"><i class="fa fa-weixin fa-2x" aria-hidden="true" style="color:#9ACD32;"></i></a>
+      </div>
+           
+    </div>
+  </div>
+
+
+
+
+
+<!----------------------------------------------------------------------
+Name: about
+Purpose:  box to my website
+---------------------------------------------------------------------- -->
+<div id="MyModal" class="modal fade" role="dialog">
+   <!-- Adding contend -->
+  <div class="modal-dialog">
+        <div class="modal-content"> 
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">TrionedAngel sub page: college general requirement</h4>
+              </div>
+              
+              <div class="modal-body">
+                  <p>This is a responsive website is created by UCSD student. </br>
+                     Language: HTML, CSS, Javascript, jquery  </br>
+                     Template: Bootstrap</br>
+                     Device: Mobile and Website</br>
+                     Date: 2017  </br>
+                  </p>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn=default" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+  </div> 
+ </div>  
+
+
+
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation
+Purpose:  animation for scroll down
+---------------------------------------------------------------------- -->
+<!-- must above the javascript cdn-->
+<script  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> 
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation part 2
+Purpose:  arrange time and distance and duration for animaition
+---------------------------------------------------------------------- -->
+<script> 
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration:2000,
+        origin:'bottom'
+      });
+      
+       sr.reveal('#begin',{
+        duration:3000,
+        origin:'left',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('#fasha',{
+        duration:3000,
+        origin:'right',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('#cal',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+      status
+      
+      sr.reveal('#status',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+      
+        sr.reveal('#loc',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+
+</script>
+
+
+
+  <!-- send of body -->
+
+</body>
+</html>

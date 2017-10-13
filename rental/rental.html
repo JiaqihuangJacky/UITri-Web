@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Triton Angel.rental.css</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ 
+    <!-- using css -->
+  <link href="rental.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   
+    <!-- using fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!----------------------------------------------------------------------
+	Name:	remove space
+	Purpose:   remove the navbar's default margin-bottom and rounded borders
+	---------------------------------------------------------------------- -->
+<style> 
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+</style>
+    
+
+
+
+ <!-- style the sldess -->
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+  </style>
+
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!----------------------------------------------------------------------
+Name: click then smooth move
+Purpose:  click button to go to next div
+---------------------------------------------------------------------- -->    
+    <script>
+    $(document).ready(function(){
+     // Add smooth scrolling to all links
+     $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+         event.preventDefault();
+         // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+           window.location.hash = hash;
+          });
+       } // End if
+     });
+    });
+  </script> <!-- script for scoll button -->
+
+
+ 
+
+
+ 
+</head>
+<body>
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse  opaque-navba">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Trition Angel</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="../index.html">Home </a></li>
+              <li><a href="#"  data-toggle="modal" data-target="#MyModal">About</a></li>
+              <li><a href="#copyright">Contact</a></li>
+  
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      
+      
+
+ 
+
+<!----------------------------------------------------------------------
+Name: myself division container
+Purpose:   introduce myself
+---------------------------------------------------------------------- --> 
+<div class="wide animated rubberBand" id ="box-wrapper1">
+  
+   <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" >
+                <h2>Off-Campus Rental</h2>
+                     <!-- link to myself -->
+            <hr>
+            
+             
+           <!-- about myself -->
+          <p id="me">
+            Apartment </br>
+            Address </br>
+            Contact </br>
+            Websites 
+          </p>
+                
+            </div>
+            <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+ 
+ <div class="container">
+            <div class="header">
+                <div class="col-12 text-center">
+                    <h2 class="this->heading"><strong>Rental Suggestion</strong></h2>
+                    
+          
+                    
+                    
+                    <hr class="this->hr">
+                </div>
+            </div>
+  </div>
+        
+        
+ <div class="container">
+    <ul class="blog-post">
+                    <li>
+                      <div class = "img img-swipe">
+                        <img src="rentalimage/lare.jpg" height="200" width="200" >
+                      </div>
+                      <h3>La Regencia </h3>
+                      <p>Address: 7681 Palmilla Dr, San Diego, CA 92122</p>
+                      <p>Phone: (858) 558-0616</p>
+                      <div class="button"><a href ="http://www.gardencommunitiesca.com/Apartment-Rentals/CA/San-Diego/La-Regencia.aspx" target="_blank">More</a></div>
+                    </li>
+                    
+          
+                    <li>
+                      <div class = "img img-scale">
+                        <img src="rentalimage/ss.jpg" height="200" width="200">
+                      </div>
+                       <h3>Costa Verde Village</h3>
+                      <p>Address: 8720 Costa Verde Blvd, San Diego, CA 92122</p>
+                      <p>Phone:(858) 202-0626</p>
+                      <div class="button"><a href ="http://www.gardencommunitiesca.com/Apartment-Rentals/CA/San-Diego/Costa-Verde-Village.aspx" target="_blank">More</a></div>
+                    </li>
+                    
+                    
+                     <li>
+                       <div class="img img-tint">
+                        <img src="rentalimage/aprt.jpg" height="200" width="200">
+                        </div>
+                      <h3>Costa Verde Tower</h3>
+                      <p>Address: 8775 Costa Verde Blvd, San Diego, CA 92122</p>
+                      <p>Phone:(858) 202-0233</p>
+                      <div class="button"><a href ="http://www.gardencommunitiesca.com/Apartment-Rentals/CA/San-Diego/La-Regencia.aspx" target="_blank">More</a></div>
+                    </li>
+                    
+                    <li>
+                      <div class="img img-scale">
+                        <img src="rentalimage/MiraView.jpg" height="200" width="180">
+                      </div>
+                      <h3>Garden Communities </h3>
+                      <p>Address: 8530 Costa Verde Blvd, San Diego, CA 92122</p>
+                      <p>Phone: (858) 202-0626</p>
+                      <div class="button"><a href ="http://www.gardencommunitiesca.com/Apartment-Rentals/CA/San-Diego/La-Regencia.aspx" target="_blank">More</a></div>
+                    </li>
+                    
+                    <li>
+                       <div class = "img img-swipe">
+                        <img src="rentalimage/regents.jpg" height="200" width="200">
+                      </div>
+                      <h3>Regent court</h3>
+                      <p>Address: 8465 Regents Rd, San Diego, CA 92122</p>
+                      <p>Phone: (858) 678-0550</p>
+                      <div class="button"><a href ="http://www.gardencommunitiesca.com/Apartment-Rentals/CA/San-Diego/La-Regencia.aspx" target="_blank">More</a></div>
+                    </li>
+                    
+                   <li>
+                       <div class="img img-tint">
+                          <img src="rentalimage/lascala.jpg" height="200" width="200">
+                      </div>
+                      <h3>La Scala Apartment</h3>
+                      <p>Address: 3845 Nobel Dr, San Diego, CA 92122</p>
+                      <p>Phone: (858) 457-4444</p>
+                      <div class="button"><a href ="https://www.apartments.com/la-scala-apartments-san-diego-ca/gpbynnw/?frontdoor=google&gclid=CjwKEAjw_6XIBRCisIGIrJeQ93oSJAA2cNtMKMYNcWZNGYYdWZWc0Up3-3tr3QD3KpVQEPl3ZHowsxoCBtPw_wcB&gclsrc=aw.ds&dclid=CPrnr4nw1NMCFRw7Twod84IIXg" target="_blank">More</a></div>
+                    </li>
+                    
+                
+                    <li>
+                       <div class = "img img-swipe">
+                          <img src="rentalimage/o.jpg" height="200" width="200">
+                        </div>
+                      <h3>Palms</h3>
+                      <p>Address: 3535 Lebon Dr #1000, San Diego, CA 92122</p>
+                      <p>Phone: (866) 831-9230</p>
+                      <div class="button"><a href ="https://www.irvinecompanyapartments.com/locations/san-diego/la-jolla/la-jolla-palms.html" target="_blank">More</a></div>
+                    </li>
+                    
+                    <li>
+                       <div class="img img-tint">
+                        <img src="rentalimage/a.jpg" height="200" width="200">
+                      </div>
+                      <h3>Torrey Pines Village Apt</h3>
+                      <p>Address: 8939 Lombard Pl, San Diego, CA 92122</p>
+                      <p>Phone: (858) 455-5677</p>
+                      <div class="button"><a href ="http://www.torreypinesapts.com/" target="_blank">More</a></div>
+                    </li>
+                    
+                    <li>
+                      <div class="img img-scale">
+                        <img src="rentalimage/noble.jpg" height="200" width="230">
+                      </div>
+                      <h3>Nobel Court</h3>
+                      <p>Address: 3707 Nobel Dr, San Diego, CA 92122</p>
+                      <p>Phone: (877) 713-3957</p>
+                      <div class="button"><a href ="http://www.nobelcourt.com/" target="_blank">More</a></div>
+                    </li>
+                    
+                
+    </ul>
+  </div>
+
+
+
+<!----------------------------------------------------------------------
+Name:fixed foot
+Purpose:  adding fixed foot with social media
+---------------------------------------------------------------------- -->
+  <div class="navbar navbar-inverse  opaque-navba" id="copyright"> 
+    <div class="container-fluid"> 
+      <div class="navbar-text  pull-left">
+            <p id="copy"> <strong>CopyRight <i class="fa fa-copyright" aria-hidden="true"></i> Jacky Huang   </strong> </p>
+      </div>  
+    
+      <!-- fixed foot right-->
+      <div class="navbar-text pull-right">
+           <a href="https://www.facebook.com/jiaqi.huang.73?ref=bookmarks" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"  style="color:#00BFFF;"></i></a>
+           <a href="https://www.instagram.com/jacky_jiaqihuang/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:#EE82EE;"></i></a>
+           <a href="http://lmgtfy.com/?q=Sorry+this+is+not+available" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:#DB7093;"></i></a>
+           <a href="http://lmgtfy.com/?q=Sorry+this+is+not+available"  target="_blank"><i class="fa fa-weixin fa-2x" aria-hidden="true" style="color:#9ACD32;"></i></a>
+      </div>
+           
+    </div>
+  </div>
+
+
+
+
+
+<!----------------------------------------------------------------------
+Name: about
+Purpose:  box to my website
+---------------------------------------------------------------------- -->
+<div id="MyModal" class="modal fade" role="dialog">
+   <!-- Adding contend -->
+  <div class="modal-dialog">
+        <div class="modal-content"> 
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">TrionedAngel sub page: college general requirement</h4>
+              </div>
+              
+              <div class="modal-body">
+                  <p>This is a responsive website is created by UCSD student. </br>
+                     Language: HTML, CSS, Javascript, jquery  </br>
+                     Template: Bootstrap</br>
+                     Device: Mobile and Website</br>
+                     Date: 2017  </br>
+                  </p>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn=default" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+  </div> 
+ </div>  
+
+
+
+
+<!----------------------------------------------------------------------
+Name: for click flip
+Purpose:  animation for click flip
+---------------------------------------------------------------------- -->
+ <script>
+      
+ $( "#header-plugin" ).load( "http://vivinantony.github.io/header-plugin/", function() {
+	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2015/05/responsive-3d-flip-card.html#tlt")  
+});
+
+//script here
+$('.card').hover(function() {
+  $(this).toggleClass('flipped');
+});
+      
+      
+  </script>
+ 
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation
+Purpose:  animation for scroll down
+---------------------------------------------------------------------- -->
+<!-- must above the javascript cdn-->
+<script  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> 
+
+
+<!----------------------------------------------------------------------
+Name: javascipt for scroll down animation part 2
+Purpose:  arrange time and distance and duration for animaition
+---------------------------------------------------------------------- -->
+<script> 
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration:2000,
+        origin:'bottom'
+      });
+      
+       sr.reveal('.war',{
+        duration:3000,
+        origin:'left',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.muir',{
+        duration:3000,
+        origin:'right',
+        distance:'100px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.ercs',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+      sr.reveal('.tmcs',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.sixth',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+       sr.reveal('.revelle',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.DEI',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+         sr.reveal('.AHI',{
+        duration:2000,
+        origin:'right',
+        distance:'300px',
+        viewFactor:0.2
+      });
+      
+
+</script>
+
+
+
+  <!-- send of body -->
+
+</body>
+</html>
